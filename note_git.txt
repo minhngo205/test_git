@@ -1,3 +1,5 @@
+Đây là branch 2 nèeee
+
 1. Đầu tiên e cần tạo 1 project Django trước (để có 1 cái base line qua branch khác không cần tạo lại)
 	Ở trên w3 sẽ có hướng dẫn cho e tạo môi trường ảo, rồi install django bla bla các thứ, cái này thì e cứ làm theo có gì thì hỏi anhhh
 
