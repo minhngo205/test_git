@@ -1,0 +1,40 @@
+1. Đầu tiên e cần tạo 1 project Django trước (để có 1 cái base line qua branch khác không cần tạo lại)
+	Ở trên w3 sẽ có hướng dẫn cho e tạo môi trường ảo, rồi install django bla bla các thứ, cái này thì e cứ làm theo có gì thì hỏi anhhh
+
+2. Sau khi e tạo xong project django rồi thì e vô Github rồi chọn new repository
+	Thường chỉ cần  nhập tên rồi "Create Repository" là được
+	
+3. Sau đó, ở folder chứa dự án django e gõ
+	git init 					#init folder .git
+	git add .					#add toàn bộ file vào stage
+	git commit -m "first commit" 			#Commit
+	git branch -M main				#Chuyển tên branch thành "main"
+	git remote add origin <link git remote>		#Add remote repositỏy trên github
+	git push -u origin main				#Cái này quan trọng này, push cái branch hiện tại lên branch main ở origin (git hub repository ớ)
+	
+4. Sau khi đã set up xong git, chúng ta tạo branch và code. Ví dụ như bài 1 e có thể tạo 1 local branch như sau:
+	git checkout bai-1				#Tạo 1 branch (tên là "bai-1") từ base line là branch main
+	
+5. Tiến hành code bài tập, sau khi code xong, e có thể commit
+	git add . / git add abc.file			#add toàn bộ (hoặc 1) file vào stagefile
+	git commit -m "Bai tap 1" 			#Commit
+	
+6. Sau đó e hãy push bằng lệnh sau:
+	git push -u origin bai-1			#E tạo branch ở bước 4 tên gì thì ở đây e dùng tên y chang như thế
+	
+7. E muốn code bài 2 nhưng không ảnh nhưởng gì đến bài 1 ư ? Thiệc là dễ dàng, e hay switch về lại base line là main branch bằng cách
+	git checkout main
+	
+8. Sau đó e lặp lại bước 4 để tạo branch 
+	git checkout bai-2
+
+9. Tiến hành bước 5 bước 6 lần lượt để code, commit và push 
+10. Nếu e muốn trở về lại để sửa bài 1 ư ? Đơn giản là...
+	git checkout bai-1
+
+11. Và e cứ dùng git checkout <tên branch> để chuyển về branch mà e mong muốn.
+
+Lưu ý:
+#1. E sẽ không thể checkout branch nếu có file đang sửa mà chưa commit
+#2. E cần setup remote branch trên github thì mới có thể push được lên github
+#3. Thường main branch sẽ là base line cho các branch còn lại, hãy nhớ switch về branch này trước khi tạo branch mới cho nó đơn giản
