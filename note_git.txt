@@ -29,7 +29,7 @@
 	git checkout main
 	
 8. Sau đó e lặp lại bước 4 để tạo branch 
-	git branch bai-1
+	git branch bai-2
 	git checkout bai-2
 
 9. Tiến hành bước 5 bước 6 lần lượt để code, commit và push 
