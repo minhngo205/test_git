@@ -13,7 +13,8 @@
 	git push -u origin main				#Cái này quan trọng này, push cái branch hiện tại lên branch main ở origin (git hub repository ớ)
 	
 4. Sau khi đã set up xong git, chúng ta tạo branch và code. Ví dụ như bài 1 e có thể tạo 1 local branch như sau:
-	git checkout bai-1				#Tạo 1 branch (tên là "bai-1") từ base line là branch main
+	git branch bai-1				#Tạo 1 branch (tên là "bai-1") từ base line là branch main
+	git checkout bai-1				#Chuyển qua branch "bai-1"
 	
 5. Tiến hành code bài tập, sau khi code xong, e có thể commit
 	git add . / git add abc.file			#add toàn bộ (hoặc 1) file vào stagefile
@@ -26,6 +27,7 @@
 	git checkout main
 	
 8. Sau đó e lặp lại bước 4 để tạo branch 
+	git branch bai-1
 	git checkout bai-2
 
 9. Tiến hành bước 5 bước 6 lần lượt để code, commit và push 
